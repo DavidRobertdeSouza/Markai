@@ -8,7 +8,7 @@ export default function TipoCadastro(){
             <View style={styles.container}>
                 <View style={styles.viewContainerImage}>
                 <Image 
-                    source={require('../Images/Cliente.png')}
+                    source={require('../../Images/Cliente.png')}
                 />
                 <TouchableOpacity style={styles.btnProps}>
                     <Text style={styles.btnText}>SOU CLIENTE</Text>
@@ -17,7 +17,7 @@ export default function TipoCadastro(){
                 </View>
                 <View style={styles.viewContainerImage}>
                 <Image
-                    source={require('../Images/Profissional.png')}/>
+                    source={require('../../Images/Profissional.png')}/>
                 <TouchableOpacity style={styles.btnProps}>
                     <Text style={styles.btnText}> SOU PROFISSIONAL</Text>
                 </TouchableOpacity>

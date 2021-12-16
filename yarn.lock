@@ -5670,7 +5670,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.7.2":
+"prop-types@^15.5.10", "prop-types@^15.5.9", "prop-types@^15.7.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -5733,6 +5733,50 @@
     "flow-parser" "^0.121.0"
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
+
+"react-native-element-dropdown@^1.5.5":
+  "integrity" "sha512-FNWnN6N4E3ooviYEhYCBFa6Fu6m23c8aH4vP0skXZvYElpGPKSDP4ieVc7WN/MzhHMFNKrDHJ4xmPK31sEgU6Q=="
+  "resolved" "https://registry.npmjs.org/react-native-element-dropdown/-/react-native-element-dropdown-1.5.5.tgz"
+  "version" "1.5.5"
+
+"react-native-material-buttons@^0.5.0":
+  "integrity" "sha1-qys+P8P1AMpxP1Hp11l4r/YCFSo="
+  "resolved" "https://registry.npmjs.org/react-native-material-buttons/-/react-native-material-buttons-0.5.0.tgz"
+  "version" "0.5.0"
+  dependencies:
+    "prop-types" "^15.5.9"
+    "react-native-material-ripple" "^0.7.0"
+
+"react-native-material-dropdown@^0.11.1":
+  "integrity" "sha1-wP5DSo5heUHvkQukTS8HyPN1hP4="
+  "resolved" "https://registry.npmjs.org/react-native-material-dropdown/-/react-native-material-dropdown-0.11.1.tgz"
+  "version" "0.11.1"
+  dependencies:
+    "prop-types" "^15.5.9"
+    "react-native-material-buttons" "^0.5.0"
+    "react-native-material-ripple" "^0.8.0"
+    "react-native-material-textfield" "^0.12.0"
+
+"react-native-material-ripple@^0.7.0":
+  "integrity" "sha1-4q9REGgFMvFK6jw6Q4JHvi/+9lk="
+  "resolved" "https://registry.npmjs.org/react-native-material-ripple/-/react-native-material-ripple-0.7.5.tgz"
+  "version" "0.7.5"
+  dependencies:
+    "prop-types" "^15.5.10"
+
+"react-native-material-ripple@^0.8.0":
+  "integrity" "sha1-uMJOb96iryoh6EaLH0CzVIMBni8="
+  "resolved" "https://registry.npmjs.org/react-native-material-ripple/-/react-native-material-ripple-0.8.0.tgz"
+  "version" "0.8.0"
+  dependencies:
+    "prop-types" "^15.5.10"
+
+"react-native-material-textfield@^0.12.0":
+  "integrity" "sha1-P7oZ12q4n2cFLIHgghUvwkPYKj8="
+  "resolved" "https://registry.npmjs.org/react-native-material-textfield/-/react-native-material-textfield-0.12.0.tgz"
+  "version" "0.12.0"
+  dependencies:
+    "prop-types" "^15.5.9"
 
 "react-native-windows@>=0.62":
   "integrity" "sha512-iHsKgZBXasyXyKmbEeSNEivEnwR7EBm5H9pJRxeV2VLLug216TL6BKRqouwEP4Bw2/lbtrW5Wzb5oayGvTFRUg=="

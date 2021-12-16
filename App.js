@@ -1,10 +1,10 @@
 import React from 'react'
-import Step1C from './src/CadastroCliente/Step1/step1'
-import Login from './src/Login/login'
-import TipoCadastro from './src/TipoCadastro/tipocadastro'
+import Step6C from './src/Pages/CadastroCliente/Step6/step6'
+import Login from './src/Pages/Login/login'
+import TipoCadastro from './src/Pages/TipoCadastro/tipocadastro'
 
 export default function App(){
   return(
-    <TipoCadastro/>
+    <Step6C/>
   )
 }
