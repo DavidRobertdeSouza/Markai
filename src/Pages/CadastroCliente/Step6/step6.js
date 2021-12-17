@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {View, Text, TextInput, TouchableOpacity} from 'react-native'
+import {View, Text, TextInput, TouchableOpacity, StyleSheet} from 'react-native'
 import {Dropdown} from 'react-native-element-dropdown'
 import {styles} from '../styleStep'
 
@@ -10,21 +10,8 @@ export default function Step6C(){
         {label: 'Prefiro não informar', value: 'I'}
     ]
     
-    const DropdownComponent = () =>{
-        const [value, setValue] = useState(null);
-        const [isFocus, setIsFocus] = useState(false);
-    
-        const renderLabel = () => {
-            if (value || isFocus) {
-                return(
-                    <Text style={[styles.label, isFocus && {color: 'blue'}]}>
-                        Dropdown label
-                    </Text>
-                )
-            }
-            return null;
-        }
-    }
+    const [value, setValue] = useState(null);
+    const [isFocus, setIsFocus] = useState(false);
 
     return(
         <View style={styles.background}>
@@ -32,20 +19,15 @@ export default function Step6C(){
                 <Text style={styles.textHeader}>Etapa 06 de 07</Text>
             </View>
             <View style={styles.viewInput}>
-                <Text style={styles.text}>Insira seu gênero</Text>
+                <Text style={styless.label}> Insira seu gênero</Text>
                 <Dropdown 
-                    style={[styles.dropdown, isFocus && { borderColor: 'blue' }]}
-                    placeholderStyle={styles.placeholderStyle}
-                    selectedTextStyle={styles.selectedTextStyle}
-                    inputSearchStyle={styles.inputSearchStyle}
-                    iconStyle={styles.iconStyle}
+                    style={[styless.dropdown]}
+                    placeholderStyle={styless.placeholderStyle}
                     data={data}
-                    search
-                    maxHeight={300}
+                    maxHeight={170}
                     labelField="label"
                     valueField="value"
-                    placeholder={!isFocus ? 'Select item' : '...'}
-                    searchPlaceholder="Search..."
+                    placeholder={!isFocus ? 'Nenhum selecionado' : '...'}
                     value={value}
                     onFocus={() => setIsFocus(true)}
                     onBlur={() => setIsFocus(false)}
@@ -61,3 +43,22 @@ export default function Step6C(){
         </View>
     )
 }
+
+const styless = StyleSheet.create({
+    dropdown: {
+        height: 40,
+        borderColor: 'gray',
+        borderBottomWidth: 1,
+        paddingHorizontal: 8,
+      },
+      label: {
+        color: '#1F1F1F',
+        fontSize: 16,
+        bottom: 5,
+        zIndex: 999,
+        paddingHorizontal: 8,
+      },
+      placeholderStyle: {
+        fontSize: 16,
+      },
+})
