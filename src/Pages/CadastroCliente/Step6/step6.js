@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
-import {View, Text, TextInput, TouchableOpacity, StyleSheet} from 'react-native'
+import React, {useState, useRef} from 'react'
+import {View, Text, TextInput, TouchableOpacity, StyleSheet, TouchableWithoutFeedback} from 'react-native'
 import {Dropdown} from 'react-native-element-dropdown'
+import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
 export default function Step6C(){
@@ -12,6 +13,7 @@ export default function Step6C(){
     
     const [value, setValue] = useState(null);
     const [isFocus, setIsFocus] = useState(false);
+    const ButtonRef = useRef();
 
     return(
         <View style={styles.background}>
@@ -36,9 +38,17 @@ export default function Step6C(){
                         setIsFocus(false);
                     }}
                 />
-                <TouchableOpacity style={styles.botao}>
-                    <Text style={styles.btnText}>CONFIRMAR</Text>
-                </TouchableOpacity>
+                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight() }>
+                    <Animatable.View 
+                    style={styles.botao} 
+                    animation='bounceInLeft' 
+                    useNativeDriver 
+                    duration={1000}
+                    ref={ButtonRef}
+                    >
+                        <Text style={styles.btnText}>CONFIRMAR</Text>
+                    </Animatable.View>
+                </TouchableWithoutFeedback>
             </View>
         </View>
     )

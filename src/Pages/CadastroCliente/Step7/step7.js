@@ -1,9 +1,12 @@
-import React from 'react'
-import {View, Text, TextInput, TouchableOpacity} from 'react-native'
+import React, {useState, useRef} from 'react'
+import {View, Text, TextInput, TouchableWithoutFeedback} from 'react-native'
+import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
 
 export default function Step7C(){
+    const ButtonRef = useRef();
+
     return(
         <View style={styles.background}>
             <View style={styles.viewHeader}>
@@ -17,9 +20,17 @@ export default function Step7C(){
                     autoCorrect={false}
                     onChangeText={() => {}}
                 />
-                <TouchableOpacity style={styles.botao}>
-                    <Text style={styles.btnText}>CONFIRMAR</Text>
-                </TouchableOpacity>
+                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight()}>
+                    <Animatable.View 
+                    style={styles.botao} 
+                    animation='bounceOut' 
+                    useNativeDriver 
+                    duration={1000}
+                    ref={ButtonRef}
+                    >
+                        <Text style={styles.btnText}>CONFIRMAR</Text>
+                    </Animatable.View>
+                </TouchableWithoutFeedback>
             </View>
         </View>
     )
