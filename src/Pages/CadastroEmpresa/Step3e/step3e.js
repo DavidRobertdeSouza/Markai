@@ -4,11 +4,18 @@ import {Dropdown} from 'react-native-element-dropdown'
 import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
-export default function Step6C(){
+export default function Step3E(){
     const data =[
-        {label: 'Masculino', value: 'M'},
-        {label: 'Feminino', value: 'F'},
-        {label: 'Prefiro não informar', value: 'I'}
+        {label: 'Fisioterapia', value: '1'},
+        {label: 'Psicólogo', value: '2'},
+        {label: 'Dentista', value: '3'},
+        {label: 'Psiquiatra', value: '4'},
+        {label: 'Médico', value: '5'},
+        {label: 'Barbearia', value: '6'},
+        {label: 'Salão de beleza', value: '7'},
+        {label: 'Manicure', value: '8'},
+        {label: 'Design de sobrancelha', value: '9'},
+        {label: 'Depiladora', value: '10'}
     ]
     
     const [value, setValue] = useState(null);
@@ -18,10 +25,10 @@ export default function Step6C(){
     return(
         <View style={styles.background}>
             <View style={styles.viewHeader}>
-                <Text style={styles.textHeader}>Etapa 06 de 07</Text>
+                <Text style={styles.textHeader}>Etapa 03 de 08</Text>
             </View>
             <View style={styles.viewInput}>
-                <Text style={styless.label}> Insira seu gênero</Text>
+                <Text style={styless.label}>Categoria</Text>
                 <Dropdown 
                     style={[styless.dropdown]}
                     placeholderStyle={styless.placeholderStyle}

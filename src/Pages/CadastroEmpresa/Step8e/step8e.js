@@ -4,26 +4,26 @@ import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
 
-export default function Step7C(){
+export default function Step8E(){
     const ButtonRef = useRef();
 
     return(
         <View style={styles.background}>
             <View style={styles.viewHeader}>
-                <Text style={styles.textHeader}>Etapa 07 de 07</Text>
+                <Text style={styles.textHeader}>Etapa 08 de 08</Text>
             </View>
             <View style={styles.viewInput}>
-                <Text style={styles.text}>Insira uma senha</Text>
+                <Text style={styles.text}>Telefone</Text>
                 <TextInput 
                     style={styles.input}
-                    placeholder='***********'
+                    placeholder='(12) 99999-9999'
                     autoCorrect={false}
                     onChangeText={() => {}}
                 />
-                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight()}>
+                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOut()}>
                     <Animatable.View 
                     style={styles.botao} 
-                    animation='bounceOut' 
+                    animation='bounceInLeft' 
                     useNativeDriver 
                     duration={1000}
                     ref={ButtonRef}
