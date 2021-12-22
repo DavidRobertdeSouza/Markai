@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
 import CheckBox from '@react-native-community/checkbox'
 
-export default function Login(){
+export default function Login({navigation}){
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
     return(
         <View style={styles.background}>
@@ -34,12 +34,14 @@ export default function Login(){
                         <Text style ={{fontSize: 12, top: 8, color:'#8F79BA'}}>Esqueci a senha </Text>
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={styles.btnEntrar}>
+                <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate('MyTabs')}>
                     <Text style = {{textAlign: 'center', color: '#FFF', fontSize: 16}}>ENTRAR</Text>
                 </TouchableOpacity>
                 <View style={{flexDirection: 'row', marginTop: 24, justifyContent: 'center'}}>
                     <Text style= {{fontSize: 16, textAlign: 'center'}}>Se ainda não é membro, </Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('TipoCadastro')}
+                    >
                         <Text style={styles.registerText}>
                             cadastre-se
                         </Text>

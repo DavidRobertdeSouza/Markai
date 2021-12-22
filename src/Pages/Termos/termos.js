@@ -2,9 +2,7 @@ import React, {useState, useRef} from 'react'
 import {View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet, TouchableWithoutFeedback} from 'react-native'
 import * as Animatable from 'react-native-animatable'
 
-export default function Termos(){
-    const ButtonRef1 = useRef();
-    const ButtonRef2 = useRef();
+export default function Termos({navigation}){
     return(
         <View style={styles.background}>
             <View style={styles.viewHeader}>
@@ -22,24 +20,22 @@ Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Arcu cursus eu
 
 Ipsum consequat nisl vel pretium. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Eu augue ut lectus arcu bibendum at varius. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Condimentum vitae sapien pellentesque habitant morbi tristique. Ipsum dolor sit amet consectetur. Mauris cursus mattis molestie a iaculis. Nisl nunc mi ipsum faucibus vitae aliquet. Blandit libero volutpat sed cras ornare. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Nibh tellus molestie nunc non blandit massa enim nec. Sed faucibus turpis in eu mi bibendum neque egestas.</Text>
                 </ScrollView>
-                <TouchableWithoutFeedback onPress={() => ButtonRef1.current.bounceOut() }>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('CadastroCriado')}>
                     <Animatable.View 
                     style={styles.botao1} 
                     animation='bounceIn' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef1}
                     >
                         <Text style={styles.btnText1}>CONCORDO</Text>
                     </Animatable.View>
                 </TouchableWithoutFeedback>
-                <TouchableWithoutFeedback onPress={() => ButtonRef2.current.bounceOut() }>
+                <TouchableWithoutFeedback>
                     <Animatable.View 
                     style={styles.botao2} 
                     animation='bounceIn' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef2}
                     >
                         <Text style={styles.btnText2}>NÃO CONCORDO</Text>
                     </Animatable.View>

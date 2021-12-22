@@ -4,7 +4,7 @@ import {Dropdown} from 'react-native-element-dropdown'
 import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
-export default function Step3E(){
+export default function Step3E({navigation}){
     const data =[
         {label: 'Fisioterapia', value: '1'},
         {label: 'Psicólogo', value: '2'},
@@ -20,7 +20,6 @@ export default function Step3E(){
     
     const [value, setValue] = useState(null);
     const [isFocus, setIsFocus] = useState(false);
-    const ButtonRef = useRef();
 
     return(
         <View style={styles.background}>
@@ -45,13 +44,12 @@ export default function Step3E(){
                         setIsFocus(false);
                     }}
                 />
-                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight() }>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('Step4E')}>
                     <Animatable.View 
                     style={styles.botao} 
                     animation='bounceInLeft' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef}
                     >
                         <Text style={styles.btnText}>CONFIRMAR</Text>
                     </Animatable.View>

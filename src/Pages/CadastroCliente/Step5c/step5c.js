@@ -4,8 +4,7 @@ import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
 
-export default function Step5C(){
-    const ButtonRef = useRef();
+export default function Step5C({navigation}){
 
     return(
         <View style={styles.background}>
@@ -20,13 +19,12 @@ export default function Step5C(){
                     autoCorrect={false}
                     onChangeText={() => {}}
                 />
-                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight()}>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('Step6C')}>
                     <Animatable.View 
                     style={styles.botao} 
                     animation='bounceInLeft' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef}
                     >
                         <Text style={styles.btnText}>CONFIRMAR</Text>
                     </Animatable.View>

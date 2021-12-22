@@ -1,11 +1,11 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React, {useState, useRef} from 'react'
 import {View, Text, TextInput, TouchableWithoutFeedback} from 'react-native'
 import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
 
-export default function Step1C(){
-    const ButtonRef = useRef();
+export default function Step1C({navigation}){
 
     return(
         <View style={styles.background}>
@@ -20,13 +20,12 @@ export default function Step1C(){
                     autoCorrect={false}
                     onChangeText={() => {}}
                 />
-                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight()}>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('Step2C')}>
                     <Animatable.View 
                     style={styles.botao} 
                     animation='bounceIn' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef}
                     >
                         <Text style={styles.btnText}>CONFIRMAR</Text>
                     </Animatable.View>

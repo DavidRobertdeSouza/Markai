@@ -4,7 +4,7 @@ import {Dropdown} from 'react-native-element-dropdown'
 import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
-export default function Step6C(){
+export default function Step6C({navigation}){
     const data =[
         {label: 'Masculino', value: 'M'},
         {label: 'Feminino', value: 'F'},
@@ -38,13 +38,12 @@ export default function Step6C(){
                         setIsFocus(false);
                     }}
                 />
-                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOutRight() }>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('Step7C')}>
                     <Animatable.View 
                     style={styles.botao} 
                     animation='bounceInLeft' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef}
                     >
                         <Text style={styles.btnText}>CONFIRMAR</Text>
                     </Animatable.View>

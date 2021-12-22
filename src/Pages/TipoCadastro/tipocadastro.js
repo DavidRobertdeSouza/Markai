@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Text, View, StyleSheet, TextInput, TouchableOpacity, Image} from 'react-native'
 
-export default function TipoCadastro(){
+export default function TipoCadastro({navigation}){
     return(
         <View style={styles.background}>
             <Text style={styles.TitlePage}>Como você deseja se cadastrar?</Text>
@@ -10,7 +10,10 @@ export default function TipoCadastro(){
                 <Image 
                     source={require('../../Images/Cliente.png')}
                 />
-                <TouchableOpacity style={styles.btnProps}>
+                <TouchableOpacity 
+                    style={styles.btnProps}
+                    onPress={() => navigation.navigate('Step1C')}
+                >
                     <Text style={styles.btnText}>SOU CLIENTE</Text>
                 </TouchableOpacity>
                 
@@ -18,7 +21,10 @@ export default function TipoCadastro(){
                 <View style={styles.viewContainerImage}>
                 <Image
                     source={require('../../Images/Profissional.png')}/>
-                <TouchableOpacity style={styles.btnProps}>
+                <TouchableOpacity 
+                    style={styles.btnProps}
+                    onPress={() => navigation.navigate('Step1E')}
+                >
                     <Text style={styles.btnText}> SOU PROFISSIONAL</Text>
                 </TouchableOpacity>
             </View>

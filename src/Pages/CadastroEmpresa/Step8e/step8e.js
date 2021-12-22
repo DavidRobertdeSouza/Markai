@@ -4,8 +4,7 @@ import * as Animatable from 'react-native-animatable'
 import {styles} from '../styleStep'
 
 
-export default function Step8E(){
-    const ButtonRef = useRef();
+export default function Step8E({navigation}){
 
     return(
         <View style={styles.background}>
@@ -20,13 +19,12 @@ export default function Step8E(){
                     autoCorrect={false}
                     onChangeText={() => {}}
                 />
-                <TouchableWithoutFeedback onPress={() => ButtonRef.current.bounceOut()}>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('Termos')}>
                     <Animatable.View 
                     style={styles.botao} 
                     animation='bounceInLeft' 
                     useNativeDriver 
                     duration={1000}
-                    ref={ButtonRef}
                     >
                         <Text style={styles.btnText}>CONFIRMAR</Text>
                     </Animatable.View>
