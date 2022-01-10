@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import billgates from '../../Images/billgates.jpg'
-import { styles } from '../CadastroCliente/styleStep';
 
 export default function Perfil() {
  return (
@@ -21,14 +20,6 @@ export default function Perfil() {
         </TouchableOpacity>
         <TouchableOpacity style={style.button}>
           <Text style={style.txtButton}>Configuração da conta</Text>
-          <Icon style={style.icone} name='chevron-right' size={21}/>
-        </TouchableOpacity>
-        <TouchableOpacity style={style.button}>
-          <Text style={style.txtButton}>Pagamentos</Text>
-          <Icon style={style.icone} name='chevron-right' size={21}/>
-        </TouchableOpacity>
-        <TouchableOpacity style={style.button}>
-          <Text style={style.txtButton}>Sobre o Markai</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>
         <TouchableOpacity style={style.button}>

@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import {Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
+import {Text, View, StyleSheet, TextInput, TouchableOpacity, Image, Dimensions} from 'react-native'
 import CheckBox from '@react-native-community/checkbox'
+import billgates from '../../Images/logo.png'
 
 export default function Login({navigation}){
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
     return(
-        <View style={styles.background}>
+        <View style={styles.background}> 
             <View style={styles.viewLogo}>
-                <Text>Teste</Text>
+                <Image style={styles.image} source={require=(billgates)}/>
             </View>
             <View style={styles.viewInput}>
                 <Text style={styles.textEmail}>Email</Text>
@@ -25,11 +26,13 @@ export default function Login({navigation}){
                     onChangeText={() => {}}
                 />
                 <View style={styles.viewCheck}>
-                    <CheckBox 
-                        value={toggleCheckBox}
-                        onValueChange={(newValue) => setToggleCheckBox(newValue)}
-                    />
-                    <Text style={{fontSize: 12, top: 8, marginRight: 135}}>Lembrar a senha</Text>  
+                    <View style={{flexDirection: 'row'}}>
+                        <CheckBox 
+                            value={toggleCheckBox}
+                            onValueChange={(newValue) => setToggleCheckBox(newValue)}
+                        />
+                        <Text style={{fontSize: 12, top: 8}}>Lembrar a senha</Text> 
+                    </View> 
                     <TouchableOpacity>
                         <Text style ={{fontSize: 12, top: 8, color:'#8F79BA'}}>Esqueci a senha </Text>
                     </TouchableOpacity>
@@ -55,13 +58,10 @@ export default function Login({navigation}){
 const styles = StyleSheet.create({
     background: {
         flex: 1,
-        alignItems: 'center'
-    },
-    viewLogo:{
-        flex: 1
+        alignItems: 'center',
     },
     viewInput:{
-        flex: 1
+        width: '85%'
     },
     textInput:{
         borderBottomWidth: 1,
@@ -77,7 +77,8 @@ const styles = StyleSheet.create({
     },
     viewCheck:{
         flexDirection: 'row',
-        marginTop: 5
+        marginTop: 5,
+        justifyContent: 'space-between'
     },
     btnEntrar:{
         height: 48,
@@ -93,4 +94,10 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         fontSize: 16
       },
+      image:{
+          height: 270,
+          width: 255,
+          marginTop: 60,
+          marginBottom: 30
+      }
 })

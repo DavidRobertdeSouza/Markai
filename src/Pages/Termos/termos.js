@@ -23,9 +23,6 @@ Ipsum consequat nisl vel pretium. Dictumst vestibulum rhoncus est pellentesque e
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('CadastroCriado')}>
                     <Animatable.View 
                     style={styles.botao1} 
-                    animation='bounceIn' 
-                    useNativeDriver 
-                    duration={1000}
                     >
                         <Text style={styles.btnText1}>CONCORDO</Text>
                     </Animatable.View>
@@ -33,9 +30,6 @@ Ipsum consequat nisl vel pretium. Dictumst vestibulum rhoncus est pellentesque e
                 <TouchableWithoutFeedback>
                     <Animatable.View 
                     style={styles.botao2} 
-                    animation='bounceIn' 
-                    useNativeDriver 
-                    duration={1000}
                     >
                         <Text style={styles.btnText2}>NÃO CONCORDO</Text>
                     </Animatable.View>

@@ -23,9 +23,6 @@ export default function Step1C({navigation}){
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Step2C')}>
                     <Animatable.View 
                     style={styles.botao} 
-                    animation='bounceIn' 
-                    useNativeDriver 
-                    duration={1000}
                     >
                         <Text style={styles.btnText}>CONFIRMAR</Text>
                     </Animatable.View>

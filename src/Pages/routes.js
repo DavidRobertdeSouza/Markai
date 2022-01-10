@@ -152,13 +152,14 @@ function MyTabs(){
   //Telas
   const StackRoute = createAppContainer(
     createStackNavigator({
-      /* Login: {
+      Login: {
         screen: Login,
         navigationOptions:{
             title: '',
-            headerTransparent: true
-        }
-      }, */
+            headerTransparent: true,
+            headerTintColor: '#FFF'
+        },                
+      }, 
       MyTabs:{
         screen: MyTabs,
         navigationOptions:{
@@ -171,49 +172,56 @@ function MyTabs(){
           screen: Step1C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step2C:{
           screen: Step2C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step3C:{
           screen: Step3C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step4C:{
           screen: Step4C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step5C:{
           screen: Step5C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step6C:{
           screen: Step6C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step7C:{
           screen: Step7C,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
 
@@ -222,56 +230,64 @@ function MyTabs(){
           screen: Step1E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step2E:{
           screen: Step2E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step3E:{
           screen: Step3E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step4E:{
           screen: Step4E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step5E:{
           screen: Step5E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step6E:{
           screen: Step6E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step7E:{
           screen: Step7E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Step8E:{
           screen: Step8E,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
 
@@ -280,21 +296,24 @@ function MyTabs(){
           screen: TipoCadastro,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       Termos:{
           screen: Termos,
           navigationOptions:{
             title: '',
-            headerTransparent: true
+            headerTransparent: true,
+            headerTintColor: '#FFF'
             }
       },
       CadastroCriado:{
         screen: CadastroCriado,
         navigationOptions:{
           title: '',
-          headerTransparent: true
+          headerTransparent: true,
+          headerTintColor: '#FFF'
         }
       }
     })
