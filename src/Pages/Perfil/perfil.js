@@ -1,20 +1,20 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
-import billgates from '../../Images/billgates.jpg'
+import icone from '../../Images/billgates.jpg'
 
-export default function Perfil() {
+export default function Perfil({navigation}) {
  return (
    <View style={style.background}>
      <View style={style.viewPerfil}>
-       <Image style={style.image} source={require=(billgates)}/>
+       <Image style={style.image} source={require=(icone)}/>
         <View style={style.viewText}>
           <Text style={style.txtNome}>David Robert</Text>
           <Text style={style.txtTelefone}>(12) 99999-9999</Text>
         </View>
      </View>
      <View style={style.viewOpcoes}>
-        <TouchableOpacity style={style.button}>
+        <TouchableOpacity style={style.button} onPress={() => navigation.navigate('Recomende')}>
           <Text style={style.txtButton}>Recomende o Markai</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>

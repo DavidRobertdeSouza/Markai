@@ -32,6 +32,7 @@ import Home from './Home/home'
 import Reserva from './Reserva/reserva'
 import Perfil from './Perfil/perfil'
 import Mensagem from './Mensagem/mensagem'
+import Recomende from './Perfil/Recomende/Recomende';
 
 
 export default function Routes() {
@@ -142,6 +143,10 @@ function MyTabs(){
             <Icon name="user-o" size={22} color={focused ? '#583b90' : '#FFF'} />
           )
         }}
+        />
+        <Tab.Screen 
+        name='Recomende'
+        component={Recomende} 
         />
       </Tab.Navigator>
     </NavigationContainer>
