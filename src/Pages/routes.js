@@ -33,6 +33,10 @@ import Reserva from './Reserva/reserva'
 import Perfil from './Perfil/perfil'
 import Mensagem from './Mensagem/mensagem'
 import Recomende from './Perfil/Recomende/Recomende';
+import InserirTelefone from './RecuperarSenha/InserirTelefone/inserirtelefone';
+import InserirCodigo from './RecuperarSenha/InserirCodigo/inserircodigo';
+import CadastroConfirmacao from './RecuperarSenha/CadastroConfirmacao/cadastroconfirmacao';
+import TelaValidacao from './RecuperarSenha/TelaValidacao/telavalidacao';
 
 
 export default function Routes() {
@@ -164,7 +168,39 @@ function MyTabs(){
             headerTransparent: true,
             headerTintColor: '#FFF'
         },                
-      }, 
+      },
+      InserirTelefone:{
+        screen: InserirTelefone,
+        navigationOptions:{
+          title: '',
+          headerTransparent: true,
+          headerTintColor: '#FFF'
+      }
+      },
+      InserirCodigo:{
+        screen: InserirCodigo,
+        navigationOptions:{
+          title: '',
+          headerTransparent: true,
+          headerTintColor: '#FFF'
+      }
+      },
+      CadastroConfirmacao:{
+        screen: CadastroConfirmacao,
+        navigationOptions:{
+          title: '',
+          headerTransparent: true,
+          headerTintColor: '#FFF'
+      }
+      },
+      TelaValidacao:{
+        screen: TelaValidacao,
+        navigationOptions:{
+          title: '',
+          headerTransparent: true,
+          headerTintColor: '#FFF'
+      }
+      },
       MyTabs:{
         screen: MyTabs,
         navigationOptions:{
@@ -302,7 +338,7 @@ function MyTabs(){
           navigationOptions:{
             title: '',
             headerTransparent: true,
-            headerTintColor: '#FFF'
+            headerTintColor: '#3F3D56'
             }
       },
       Termos:{

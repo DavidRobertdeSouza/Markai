@@ -18,6 +18,8 @@ export default function Step2C({navigation}){
                     placeholder='josemario@gmail.com'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    keyboardType='email-address'
+                    autoCapitalize='none'
                 />
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Step3C')}>
                     <Animatable.View 

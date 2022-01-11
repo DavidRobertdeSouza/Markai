@@ -18,6 +18,7 @@ export default function Step5C({navigation}){
                     placeholder='01/07/2021'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    keyboardType='number-pad'
                 />
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Step6C')}>
                     <Animatable.View 

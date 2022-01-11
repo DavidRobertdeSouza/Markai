@@ -18,6 +18,7 @@ export default function Step1E({navigation}){
                     placeholder='Ex.: XX.XXX.XXX/XXXX-XX'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    keyboardType='number-pad'
                 />
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Step2E')}>
                     <Animatable.View 

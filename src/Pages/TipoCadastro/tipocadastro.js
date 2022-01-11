@@ -13,6 +13,7 @@ export default function TipoCadastro({navigation}){
                 <TouchableOpacity 
                     style={styles.btnProps}
                     onPress={() => navigation.navigate('Step1C')}
+                    activeOpacity={0.8}
                 >
                     <Text style={styles.btnText}>SOU CLIENTE</Text>
                 </TouchableOpacity>
@@ -24,6 +25,7 @@ export default function TipoCadastro({navigation}){
                 <TouchableOpacity 
                     style={styles.btnProps}
                     onPress={() => navigation.navigate('Step1E')}
+                    activeOpacity={0.8}
                 >
                     <Text style={styles.btnText}> SOU PROFISSIONAL</Text>
                 </TouchableOpacity>

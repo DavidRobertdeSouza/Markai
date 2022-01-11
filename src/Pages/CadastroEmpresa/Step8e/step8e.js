@@ -18,6 +18,7 @@ export default function Step8E({navigation}){
                     placeholder='(12) 99999-9999'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    keyboardType='phone-pad'
                 />
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Termos')}>
                     <Animatable.View 
