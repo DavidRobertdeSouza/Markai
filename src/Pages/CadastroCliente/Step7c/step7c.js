@@ -16,8 +16,11 @@ export default function Step7C({navigation}){
                 <TextInput 
                     style={styles.input}
                     placeholder='***********'
+                    secureTextEntry={true}
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    autoCapitalize='none'
+                    
                 />
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Termos')}>
                     <Animatable.View 

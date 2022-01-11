@@ -14,15 +14,15 @@ export default function Perfil() {
         </View>
      </View>
      <View style={style.viewOpcoes}>
-        <TouchableOpacity style={style.button}>
+        <TouchableOpacity style={style.button} activeOpacity={0.8}>
           <Text style={style.txtButton}>Recomende o Markai</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>
-        <TouchableOpacity style={style.button}>
+        <TouchableOpacity style={style.button} activeOpacity={0.8}>
           <Text style={style.txtButton}>Configuração da conta</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>
-        <TouchableOpacity style={style.button}>
+        <TouchableOpacity style={style.button} activeOpacity={0.8}>
           <Text style={style.txtButton}>Sair</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>

@@ -18,6 +18,7 @@ export default function Step4C({navigation}){
                     placeholder='(xx) 99999-9999'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    keyboardType='phone-pad'
                 />
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Step5C')}>
                     <Animatable.View 

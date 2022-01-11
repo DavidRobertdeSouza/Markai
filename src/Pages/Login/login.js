@@ -17,6 +17,7 @@ export default function Login({navigation}){
                     placeholder='debra.holt@example.com'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    keyboardType='email-address'
                 />
                 <Text style={styles.textEmail}>Senha</Text>
                 <TextInput 
@@ -24,6 +25,8 @@ export default function Login({navigation}){
                     placeholder='***************'
                     autoCorrect={false}
                     onChangeText={() => {}}
+                    autoCapitalize='none'
+                    secureTextEntry={true}
                 />
                 <View style={styles.viewCheck}>
                     <View style={{flexDirection: 'row'}}>
@@ -33,11 +36,11 @@ export default function Login({navigation}){
                         />
                         <Text style={{fontSize: 12, top: 8}}>Lembrar a senha</Text> 
                     </View> 
-                    <TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.navigate('InserirTelefone')}>
                         <Text style ={{fontSize: 12, top: 8, color:'#8F79BA'}}>Esqueci a senha </Text>
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate('MyTabs')}>
+                <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate('MyTabs')} activeOpacity={0.8}>
                     <Text style = {{textAlign: 'center', color: '#FFF', fontSize: 16}}>ENTRAR</Text>
                 </TouchableOpacity>
                 <View style={{flexDirection: 'row', marginTop: 24, justifyContent: 'center'}}>
