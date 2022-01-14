@@ -148,10 +148,6 @@ function MyTabs(){
           )
         }}
         />
-        <Tab.Screen 
-        name='Recomende'
-        component={Recomende} 
-        />
       </Tab.Navigator>
     </NavigationContainer>
   )
@@ -355,8 +351,16 @@ function MyTabs(){
           title: '',
           headerTransparent: true,
           headerTintColor: '#FFF'
+          }
+      },
+      Recomende:{
+        screen: Recomende,
+        navigationOptions:{
+          title: 'Configuração da conta',
+          headerTintColor: '#FFF'
         }
       }
+
     })
   );
 

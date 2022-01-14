@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Text, View, StyleSheet, TextInput, TouchableOpacity, Image, Dimensions} from 'react-native'
+import {Text, View, StyleSheet, TextInput, TouchableOpacity, Image} from 'react-native'
 import CheckBox from '@react-native-community/checkbox'
 import billgates from '../../Images/logo.png'
 

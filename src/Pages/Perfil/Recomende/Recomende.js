@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
 
-export default function Recomende(navigation){
+export default function Recomende({navigation}){
     return(
         <View style={style.background}>
             <View style={style.container}>

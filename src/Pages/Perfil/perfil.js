@@ -14,19 +14,15 @@ export default function Perfil({navigation}) {
         </View>
      </View>
      <View style={style.viewOpcoes}>
-<<<<<<< HEAD
         <TouchableOpacity style={style.button} onPress={() => navigation.navigate('Recomende')}>
-=======
-        <TouchableOpacity style={style.button} activeOpacity={0.8}>
->>>>>>> 805b039a1896b213ba666a74acbf91461f27bf95
           <Text style={style.txtButton}>Recomende o Markai</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>
-        <TouchableOpacity style={style.button} activeOpacity={0.8}>
+        <TouchableOpacity style={style.button}>
           <Text style={style.txtButton}>Configuração da conta</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>
-        <TouchableOpacity style={style.button} activeOpacity={0.8}>
+        <TouchableOpacity style={style.button}>
           <Text style={style.txtButton}>Sair</Text>
           <Icon style={style.icone} name='chevron-right' size={21}/>
         </TouchableOpacity>
