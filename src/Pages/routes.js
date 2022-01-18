@@ -33,6 +33,7 @@ import Reserva from './Reserva/reserva'
 import Perfil from './Perfil/perfil'
 import Mensagem from './Mensagem/mensagem'
 import Recomende from './Perfil/Recomende/Recomende';
+import Endereco from './Perfil/Endereco/Endereco';
 import InserirTelefone from './RecuperarSenha/InserirTelefone/inserirtelefone';
 import InserirCodigo from './RecuperarSenha/InserirCodigo/inserircodigo';
 import CadastroConfirmacao from './RecuperarSenha/CadastroConfirmacao/cadastroconfirmacao';
@@ -355,6 +356,13 @@ function MyTabs(){
       },
       Recomende:{
         screen: Recomende,
+        navigationOptions:{
+          title: 'Configuração da conta',
+          headerTintColor: '#FFF'
+        }
+      },
+      Endereco:{
+        screen: Endereco,
         navigationOptions:{
           title: 'Configuração da conta',
           headerTintColor: '#FFF'

@@ -7,6 +7,7 @@ import Step8E from './src/Pages/CadastroEmpresa/Step8e/step8e'
 import Routes from './src/Pages/routes'
 import Perfil from './src/Pages/Perfil/perfil'
 import Recomende from './src/Pages/Perfil/Recomende/Recomende'
+import Endereco from './src/Pages/Perfil/Endereco/Endereco'
 import ConfiguracoesConta from './src/Pages/Perfil/ConfiguracoesConta/ConfiguracoesConta'
 import InserirTelefone from './src/Pages/RecuperarSenha/InserirTelefone/inserirtelefone'
 
@@ -14,6 +15,6 @@ import InserirTelefone from './src/Pages/RecuperarSenha/InserirTelefone/inserirt
 export default function App(){
   console.disableYellowBox = true
   return(
-    <ConfiguracoesConta/>
+    <Endereco/>
   )
 }
